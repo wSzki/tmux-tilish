@@ -300,9 +300,9 @@ tmux $bind "${mod}=" next-window
 tmux $bind "${mod}-" previous-window
 tmux $bind "${mod}N" new-window  -ac "#{pane_current_path}"
 tmux $bind "${mod}l" next-layout
-tmux $bind "${mod}p" choose-tree
-tmux $bind "${mod}b" choose-buffer
-tmux $bind "${mod}b" choose-buffer
+tmux $bind "${mod}p" choose-tree -Z
+tmux $bind "${mod}b" choose-buffer -Z
+tmux $bind "${mod}b" choose-buffer -Z
 #tmux $bind "${mod}C" kill-pane
 
 
