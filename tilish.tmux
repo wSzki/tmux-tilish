@@ -299,6 +299,8 @@ fi
 tmux $bind "${mod}=" next-window
 tmux $bind "${mod}-" previous-window
 tmux $bind "${mod}N" new-window  -ac "#{pane_current_path}"
+tmux $bind "${mod}l" next-layout
+
 
 
 
