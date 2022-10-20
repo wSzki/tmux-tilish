@@ -206,13 +206,13 @@ tmux $bind "${mod}n" \
 # Close a window with Alt + Shift + q.
 if [ -z "$legacy" ]
 then
-	tmux $bind "${mod}Q" \
+	tmux $bind "${mod}C" \
 		if-shell \
 			'[ "$(tmux display-message -p "#{window_panes}")" -gt 1 ]' \
 			'kill-pane; select-layout; select-layout -E' \
 			'kill-pane'
 else
-	tmux $bind "${mod}Q" \
+	tmux $bind "${mod}C" \
 		kill-pane
 fi
 
@@ -303,7 +303,7 @@ tmux $bind "${mod}l" next-layout
 tmux $bind "${mod}p" choose-tree
 tmux $bind "${mod}b" choose-buffer
 tmux $bind "${mod}b" choose-buffer
-tmux $bind "${mod}C" kill-pane
+#tmux $bind "${mod}C" kill-pane
 
 
 
