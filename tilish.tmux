@@ -305,6 +305,7 @@ tmux $bind "${mod}b" choose-buffer -Z
 tmux $bind "${mod}s" choose-session -Z
 tmux $bind "${mod}w" resize-pane -Z
 tmux $bind "${mod}Tab" select-window -l
+tmux $bind "${mod}Space" choose-tree -Z
 #tmux $bind "${mod}C" kill-pane
 
 
