@@ -306,7 +306,6 @@ tmux $bind "${mod}b" choose-buffer -Z
 tmux $bind "${mod}w" resize-pane -Z
 tmux $bind "${mod}Tab" select-window -l
 tmux $bind "${mod}Space" choose-session -Z
-tmux $bind "${mod}*" new-session
 tmux $bind "${mod}N" new-session
 tmux $bind "${mod};" command
 tmux $bind "${mod}:" command
